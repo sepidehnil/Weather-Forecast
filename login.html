@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/icon/logo.png">
+  <title>Login</title>
+
+  <link rel="manifest" href="./manifest.json" />
+<!-- ios support -->
+<link rel="apple-touch-icon" href="./assets/icon/logo.png" />
+<link rel="apple-touch-icon" href="./assets/icon/logo.png" />
+<link rel="apple-touch-icon" href="./assets/icon/logo.png" />
+<link rel="apple-touch-icon" href="./assets/icon/logo.png" />
+<link rel="apple-touch-icon" href="./assets/icon/logo.png" />
+<link rel="apple-touch-icon" href="./assets/icon/logo.png" />
+<link rel="apple-touch-icon" href="./assets/icon/logo.png" />
+<link rel="apple-touch-icon" href="./assets/icon/logo.png" />
+<meta name="apple-mobile-web-app-status-bar" content="#eee" />
+<meta name="theme-color" content="#eee" />
+
+
+
+
+
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js" integrity="sha512-XCthc/WzPfa+oa49Z3TI6MUK/zlqd67KwyRL9/R19z6uMqBNuv8iEnJ8FWHUFAjC6srr8w3FMZA91Tfn60T/9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="w-screen h-screen overflow-hidden relative">
+
+
+  <section class="w-screen h-screen overflow-hidden -z-10 ">
+      <img class="w-full h-full object-cover" src="./assets/images/n1.jpg" alt="login background">
+  </section>
+
+
+  <section id="login-box" class="login-modal md:animate-move">
+    <p class="text-white text-2xl font-bold">Login</p>
+    <form  action="#" class="flex flex-col gap-3 w-full">
+      
+      <span class="flex text-slate-400 items-center gap-2 rounded-sm bg-slate-50 px-2 py-2">
+        <i class="bi bi-envelope-fill"></i>
+        <input id="login-email" type="email" placeholder="Email" class="form-input" required>
+      </span>
+      <span class="flex text-slate-400 items-center gap-2 rounded-sm bg-slate-50 px-2 py-2">
+        <i class="bi bi-shield-lock-fill"></i>
+        <input id="login-password" type="password" placeholder="Password" class="form-input" required>
+      </span>
+      
+      <a href="#" class="text-sm cursor-pointer text-slate-200">forget password ?</a>
+      <button id="login-submit" type="submit" class="w-full bg-gray-700 rounded-sm p-2 flex items-center justify-center ">
+        <div id="animation-wrapper" class="w-[24px] h-[24px]"></div>
+        <p id="loginbt-text" class="mr-2">Continue</p> 
+      </button>
+
+    </form>
+      <span class="h-[1px] w-full block bg-slate-700"></span>
+      <a id="goToSignup" href="#" class="text-blue-100">Create an account</a>
+  </section>
+  
+  <section id="signup-box" class="login-modal hidden md:animate-move">
+    <p class="text-white text-2xl font-semibold">Sign up</p>
+    <form action="#" class="flex flex-col gap-3 w-full">
+      
+      <span class="flex text-gray-400 items-center gap-2 rounded-sm bg-white px-2 py-2">
+        <i class="bi bi-person-fill"></i>
+        <input id="signUp-name" type="text" placeholder="user name" class="form-input" required>
+      </span>
+
+      <span class="flex text-gray-400 items-center gap-2 rounded-sm bg-white px-2 py-2">
+        <i class="bi bi-envelope-fill"></i>
+        <input id="signup-email" type="email" placeholder="email" class="form-input" required>
+      </span>
+      <span class="flex text-gray-400 items-center gap-2 rounded-sm bg-white px-2 py-2">
+        <i class="bi bi-shield-lock-fill"></i>
+        <input id="signup-password" type="password" placeholder="password" class="form-input" required>
+      </span>
+      <span class="flex text-gray-400 items-center gap-2 rounded-sm bg-white px-2 py-2">
+        <i class="bi bi-shield-lock-fill"></i>
+        <input id="signup-confirm-password" type="password" placeholder="confirm password" class="form-input" required>
+      </span>
+      
+      <button id="signupbtn" type="submit" class="w-full bg-slate-600 rounded-sm p-2 flex items-center justify-center">
+        <div id="signup-animation-wrapper" class="w-[24px] h-[24px]"></div>
+        <p id="signuptext" class="mr-2 ">Continue</p> 
+      </button>
+
+    </form>
+      <span class="h-[1px] w-full block bg-slate-700"></span>
+      <a id="gotoLogin" href="#" class="text-blue-100">have an account</a>
+  </section>
+
+
+
+
+  <section class="hidden lg:block  w-1/2 absolute top-1/2 -translate-y-1/2 z-20 text-white left-14">
+    <h1 class="text-xl md:text-6xl animate-left">Welcome to Weather Forecast</h1>
+    <p class="text-md mt-10 text-white animate-fade-out">“It was a cool and breezy evening. A strong gust of wind blew against my face.” “It was a bright and sunny morning. White, fluffy clouds drifted across the sky.”</p>
+    <div class="flex gap-2 mt-3 animate-fade-out">
+      <span class="flex gap-1 cursor-pointer bg-slate-200 rounded-md px-2 pr-5 items-center justify-center">
+        <div class="w-[40px] h-[40px] overflow-hidden">
+          <img class="w-full h-full object-cover" src="./assets/icon/apple.png" alt="">
+        </div>
+        <p class="text-slate-900 ">Apple Store</p>
+      </span>
+      <span class="flex gap-1 cursor-pointer bg-slate-200 rounded-md px-2 pr-5 items-center justify-center">
+        <div class="w-[40px] h-[40px] overflow-hidden">
+          <img class="w-full h-full object-cover" src="./assets/icon/playlogo.png" alt="">
+        </div>
+        <p class="text-slate-900 ">Play Store</p>
+      </span>
+    </div>
+  </section>
+
+
+
+  <section id="error-modal" class="absolute bottom-10 py-3 px-5 text-white -translate-x-1/2 translate-y-[200px] left-1/2 bg-red-500 rounded-md z-40">
+   
+  </section>
+
+
+  
+
+  <script type="module" src="./dist/scripts/login.js"></script>
+</body>
+</html>
